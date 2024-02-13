@@ -1,0 +1,15 @@
+.settings-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f0f5ff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    width: 129px;
+    height: 32px;
+}
+
+.seettings-icon {
+    margin-right: 10px;
+}

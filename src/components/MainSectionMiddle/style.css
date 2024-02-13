@@ -1,0 +1,14 @@
+.main-middle {
+    padding: 24px 24px;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+
+.middle-paragraph {
+    text-align: left;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
