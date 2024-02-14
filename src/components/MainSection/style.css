@@ -6,7 +6,7 @@
 
 @media (max-width: 1000px) {
     .main-section {
-        padding: 24px 24px 0px 24px;
+        padding: 24px 24px 0;
         width: auto;
         max-width: 752px;
     }

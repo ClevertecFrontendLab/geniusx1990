@@ -24,7 +24,7 @@ ul {
 }
 
 .trigger {
-    background-color: #ffffff;
+    background-color: #FFF;
     width: 66px;
     height: 20px;
     position: fixed;
@@ -42,7 +42,7 @@ ul {
 
 .trigger span {
     transform: rotate(90deg);
-    margin-right: 0px;
+    margin-right: 0;
     padding: 3px;
 }
 
