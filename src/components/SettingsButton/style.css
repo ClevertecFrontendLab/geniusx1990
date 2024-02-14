@@ -14,7 +14,29 @@
     margin-right: 10px;
 }
 
-@media screen and (max-width: 834px){
+@media screen and (max-width: 834px) {
     .seettings-icon {
-display: none;     }
-  }
+        display: none;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .seettings-icon {
+        display: block;
+    }
+
+    .settings-button.mobile {
+        border-radius: 50%;
+        border: solid 1px #d9d9d9;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+    }
+    .settings-button.mobile .anticon {
+        margin-right: 0;
+    }
+
+    .settings-button.mobile .anticon + span {
+        display: none;
+    }
+}

@@ -31,3 +31,17 @@
     border-radius: 2px;
     background-color: #fff;
 }
+
+@media screen and (max-width: 558px) {
+    .card-footer {
+        min-width: 100%;
+    }
+
+    .top-card {
+        text-align: center;
+    }
+    
+    .bottom-card {
+        justify-content: space-around
+    }
+}

@@ -36,3 +36,11 @@ header {
         font-weight: 500;
      }
   }
+
+  @media screen and (max-width: 361px){
+    .header-content {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;
+     }
+  }

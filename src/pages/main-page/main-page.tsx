@@ -17,15 +17,20 @@ export const MainPage: React.FC = () => {
     const onCollapse = (collapsed: boolean) => {
         setCollapsed(collapsed);
     };
+    const dataTestId = window.innerWidth <= 361 ? 'sider-switch-mobile' : 'sider-switch';
 
     return (
         <Layout style={{ minHeight: '100vh' }}>
             <div
-                data-test-id='sider-switch'
+                data-test-id={dataTestId}
                 className={`trigger ${collapsed ? 'collapsed' : ''}`}
                 onClick={() => onCollapse(!collapsed)}
             >
-                {collapsed ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
+                {collapsed ? (
+                    <MenuFoldOutlined style={{ color: '#8C8C8C' }} />
+                ) : (
+                    <MenuUnfoldOutlined style={{ color: '#8C8C8C' }} />
+                )}
             </div>
             <Sider
                 collapsible
@@ -45,7 +50,12 @@ export const MainPage: React.FC = () => {
                 <CustomMenu collapsed={collapsed} />
                 <ButtonExit collapsed={collapsed} />
             </Sider>
-            <Layout className='site-layout' style={{ marginLeft: collapsed ? 64 : 208 }}>
+            <Layout
+                className='site-layout'
+                style={{
+                    marginLeft: collapsed ? 0 : window.innerWidth <= 361 ? 0 : collapsed ? 64 : 208,
+                }}
+            >
                 <Header />
                 <Content>
                     <MainSection />

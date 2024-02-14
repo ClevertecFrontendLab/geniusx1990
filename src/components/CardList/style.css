@@ -3,3 +3,10 @@
     justify-content: space-between;
     margin-bottom: 24px;
 }
+
+
+@media screen and (max-width: 669px){
+    .card-list {
+        flex-direction: column;
+     }
+  }

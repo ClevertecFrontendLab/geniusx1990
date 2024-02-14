@@ -19,3 +19,19 @@
 .card:last-child {
     margin-right: 0;
 }
+
+@media screen and (max-width: 669px) {
+    .card {
+        margin-right: 0px;
+        margin-bottom: 8px;
+        max-width: 100%;
+    }
+
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .card-title {
+        text-align: center;
+    }
+}

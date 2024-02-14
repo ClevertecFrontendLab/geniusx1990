@@ -29,3 +29,15 @@
 .exit-button img {
     margin-right: 10px;
 }
+
+@media screen and (max-width: 361px) {
+    .exit-button img {
+        display: none;
+    }
+
+    .exit-button {
+        margin: 7px 16px;
+        padding: 4px 15px;
+        width: 90px;
+    }
+}
