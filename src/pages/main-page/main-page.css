@@ -82,4 +82,8 @@ ul {
     .trigger.collapsed {
         left: -23px;
     }
+    
+    .site-layout {
+        margin-left: 106px !important;
+    }
 }
