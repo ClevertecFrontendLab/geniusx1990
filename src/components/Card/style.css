@@ -9,6 +9,13 @@
 }
 
 .card {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 2px;
+    margin-right: 16px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.card:last-child {
+    margin-right: 0px;
 }

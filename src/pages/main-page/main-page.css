@@ -24,7 +24,7 @@ ul {
 }
 
 .trigger {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 66px;
     height: 20px;
     position: fixed;
@@ -53,4 +53,11 @@ ul {
 }
 .ant-layout-sider-collapsed {
     width: 64px !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-title {
+        text-align: left;
+    }
+    
 }

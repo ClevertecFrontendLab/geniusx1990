@@ -1,5 +1,13 @@
 .main-section {
     padding-top: 24px;
     padding-left: 24px;
-    width: 752px;
+    max-width: 752px;
+}
+
+@media (max-width: 1000px) {
+    .main-section {
+        padding: 24px 24px 0px 24px;
+        width: auto;
+        max-width: 752px;
+    }
 }
