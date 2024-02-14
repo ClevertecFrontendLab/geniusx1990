@@ -1,0 +1,25 @@
+.sign-out {
+    width: 16px;
+    height: 16px;
+}
+
+.exit-button {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: centers;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+}
+
+.exit-button img {
+    margin-right: 10px;
+}

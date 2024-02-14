@@ -4,8 +4,8 @@
     background-image: url(../../../main_page_light.png);
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    /*  display: flex;
+    flex-direction: column; */
     /*     
  margin: 0 auto;
  padding: 2rem;
@@ -15,4 +15,42 @@
 
 footer {
     margin-top: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trigger {
+    background-color: #FFFFFF;
+    width: 66px;
+    height: 20px;
+    position: fixed;
+    top: 50%;
+    left: 184px;
+    cursor: pointer;
+    z-index: 1000;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 120%, 0% 100%);
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+.trigger.collapsed {
+    left: 40px;
+}
+
+.trigger span {
+    transform: rotate(90deg);
+    margin-right: 0px;
+    padding: 3px;
+}
+
+.ant-layout-sider {
+    max-width: 208px !important;
+    min-width: 64px !important;
+    width: 208px !important;
+}
+.ant-layout-sider-collapsed {
+    width: 64px !important;
 }
