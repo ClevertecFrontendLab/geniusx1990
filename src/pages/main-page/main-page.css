@@ -1,42 +1,107 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+    min-height: 100vh;
+    max-width: 1440px;
+    background-image: url(../../../main_page_light.png);
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+footer {
+    margin-top: auto;
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.trigger-mobile {
+    display: none;
+}
+
+.trigger {
+    background-color: #fff;
+    width: 66px;
+    height: 20px;
+    position: fixed;
+    top: 50%;
+    left: 184px;
+    cursor: pointer;
+    z-index: 1000;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 120%, 0% 100%);
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+.trigger.collapsed {
+    left: 40px;
+}
+
+.trigger span {
+    transform: rotate(90deg);
+    margin-right: 0;
+    padding: 3px;
+}
+
+.ant-layout-sider {
+    max-width: 208px !important;
+    min-width: 64px !important;
+    width: 208px !important;
+}
+.ant-layout-sider-collapsed {
+    width: 64px !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-title {
+        text-align: left;
     }
-    to {
-        transform: rotate(360deg);
+}
+
+@media screen and (max-width: 361px) {
+    .trigger-mobile {
+        left: 95px;
+        top: 50px;
     }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
+    .ant-layout-sider {
+        max-width: 106px !important;
+        min-width: 0 !important;
+        height: 640px !important;
     }
-}
 
-.card {
-    padding: 2em;
-}
+    .ant-layout-sider.ant-layout-sider-light {
+        width: 106px;
+    }
+    .ant-layout-sider.ant-layout-sider-light.ant-layout-sider-collapsed {
+        width: 0 !important;
+    }
 
-.read-the-docs {
-    color: #888;
+    .trigger-mobile.collapsed {
+        left: -10px;
+    }
+
+    .site-layout {
+        margin-left: 0 !important;
+    }
+    .trigger-mobile {
+        display: block;
+        background-color: #fff;
+        position: fixed;
+        cursor: pointer;
+        z-index: 1000;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 120%, 0% 100%);
+        transform: translate(0, -50%) rotate(90deg);
+        width: 48px;
+        height: 32px;
+    }
+
+    .trigger-mobile span {
+        padding: 6px;
+        transform: rotate(90deg);
+        margin-right: 0;
+    }
+    .trigger {
+        display: none;
+    }
 }

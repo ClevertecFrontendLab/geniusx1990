@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 361px) {
+    .logo {
+        padding: 16px 17px !important;
+        margin-top: 0;
+        margin-bottom: 32px;
+        width: 72px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-img {
+        width: 52.92px;
+        height: 13.02px;
+    }
+
+    .second-img {
+        width: 18.32px;
+        height: 16.11px;
+    }
+}

@@ -1,0 +1,42 @@
+.settings-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f0f5ff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    width: 129px;
+    height: 32px;
+}
+
+.seettings-icon {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 834px) {
+    .seettings-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .seettings-icon {
+        display: block;
+    }
+
+    .settings-button.mobile {
+        border-radius: 50%;
+        border: solid 1px #d9d9d9;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+    }
+    .settings-button.mobile .anticon {
+        margin-right: 0;
+    }
+
+    .settings-button.mobile .anticon + span {
+        display: none;
+    }
+}

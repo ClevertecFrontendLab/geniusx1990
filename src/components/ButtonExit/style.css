@@ -1,0 +1,43 @@
+.sign-out {
+    width: 16px;
+    height: 16px;
+}
+
+.exit-button {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+.exit-button span {
+    display: flex;
+    align-items: center;
+}
+
+.exit-button img {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 361px) {
+    .exit-button img {
+        display: none;
+    }
+
+    .exit-button {
+        margin: 7px 16px;
+        padding: 4px 15px;
+        width: 90px;
+    }
+}

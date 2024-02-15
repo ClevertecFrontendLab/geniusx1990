@@ -1,0 +1,41 @@
+.ant-menu-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+}
+
+.ant-menu-item-icon {
+    margin-right: 10px;
+}
+
+.ant-menu-inline-collapsed .ant-menu-item {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 361px) {
+    .ant-menu-item {
+        padding-left: 8px !important;
+        padding-right: 8px;
+        margin-bottom: 8px;
+
+    }
+
+    .ant-menu-item:last-child {
+        margin-bottom: 0;
+
+    }
+
+    .ant-menu-item-icon {
+        display: none;
+    }
+
+}

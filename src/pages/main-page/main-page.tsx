@@ -1,34 +1,77 @@
-import React, { useState } from 'react';
-
-import reactLogo from '/react.svg';
-import viteLogo from '/vite.svg';
-import tsLogo from '/ts.svg';
 import './main-page.css';
+import React, { useState } from 'react';
+import { Content } from 'antd/lib/layout/layout';
+import { Layout } from 'antd';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import Header from '@components/Header/Header';
+import Footer from '@components/Footer/Footer';
+import MainSection from '@components/MainSection/MainSection';
+import Sider from 'antd/lib/layout/Sider';
+import CustomMenu from '@components/CustomMenu/CustomMenu';
+import ButtonExit from '@components/ButtonExit/ButtonExit';
+import LogoComponent from '@components/LogoComponent/LogoComponent';
 
 export const MainPage: React.FC = () => {
-    const [count, setCount] = useState(0);
+    const [collapsed, setCollapsed] = useState(false);
+
+    const onCollapse = (collapsed: boolean) => {
+        setCollapsed(collapsed);
+    };
 
     return (
-        <>
-            <div>
-                <a href='https://vitejs.dev' target='_blank'>
-                    <img src={viteLogo} className='logo' alt='Vite logo' />
-                </a>
-                <a href='https://react.dev' target='_blank'>
-                    <img src={reactLogo} className='logo react' alt='React logo' />
-                </a>
-                <a href='https://www.typescriptlang.org/' target='_blank'>
-                    <img src={tsLogo} className='logo' alt='TS logo' />
-                </a>
+        <Layout style={{ minHeight: '100vh' }}>
+            <div
+                data-test-id='sider-switch'
+                className={`trigger ${collapsed ? 'collapsed' : ''}`}
+                onClick={() => onCollapse(!collapsed)}
+            >
+                {collapsed ? (
+                    <MenuFoldOutlined style={{ color: '#8C8C8C' }} />
+                ) : (
+                    <MenuUnfoldOutlined style={{ color: '#8C8C8C' }} />
+                )}
             </div>
-            <h1>Vite + React + TS</h1>
-            <div className='card'>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/pages/main-page.tsx</code> and save to test HMR
-                </p>
+            <div
+                data-test-id='sider-switch-mobile'
+                className={`trigger-mobile ${collapsed ? 'collapsed' : ''}`}
+                onClick={() => onCollapse(!collapsed)}
+            >
+                {collapsed ? (
+                    <MenuFoldOutlined style={{ color: '#8C8C8C' }} />
+                ) : (
+                    <MenuUnfoldOutlined style={{ color: '#8C8C8C' }} />
+                )}
             </div>
-            <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-        </>
+            <Sider
+                collapsible
+                collapsed={collapsed}
+                onCollapse={onCollapse}
+                trigger={null}
+                theme='light'
+                style={{
+                    overflow: 'auto',
+                    height: '100vh',
+                    position: 'fixed',
+                    left: 0,
+                    backgroundColor: '#FFFFFF',
+                }}
+            >
+                <LogoComponent collapsed={collapsed} />
+                <CustomMenu collapsed={collapsed} />
+                <ButtonExit collapsed={collapsed} />
+            </Sider>
+            <Layout
+                className='site-layout'
+                style={{
+                    marginLeft: collapsed ? 64 : 208,
+                }}
+            >
+                <Header />
+                <Content>
+                    <MainSection />
+                </Content>
+                <Footer />
+            </Layout>
+        </Layout>
     );
 };

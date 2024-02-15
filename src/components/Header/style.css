@@ -1,0 +1,46 @@
+.header-content {
+    font-family: Inter;
+    font-size: 38px;
+    line-height: 49.4px;
+    font-weight: 700;
+    text-align: left;
+    color: #262626;
+    margin: 0
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+header {
+    padding: 16px 24px;
+    background-color: #f0f5ff;
+}
+
+.header-title {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    text-align: left;
+    margin: 0
+}
+
+@media screen and (max-width: 834px){
+    .header-content {
+        font-size: 24px;
+        line-height: 31.2px;
+        font-weight: 500;
+     }
+  }
+
+  @media screen and (max-width: 361px){
+    .header-content {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;
+     }
+  }

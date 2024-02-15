@@ -1,0 +1,37 @@
+.card-title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #262626;
+    margin: 0;
+    padding: 12px 24px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 2px;
+    margin-right: 16px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 669px) {
+    .card {
+        margin-right: 0;
+        margin-bottom: 8px;
+        max-width: 100%;
+    }
+
+    .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+}

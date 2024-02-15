@@ -1,0 +1,22 @@
+.main-section {
+    padding-top: 24px;
+    padding-left: 24px;
+    max-width: 752px;
+}
+
+@media (max-width: 1000px) {
+    .main-section {
+        padding: 24px 24px 0;
+        width: auto;
+        max-width: 752px;
+    }
+}
+
+
+@media screen and (max-width: 361px) {
+.main-section {
+    padding: 24px 16px;
+}
+  
+   
+}

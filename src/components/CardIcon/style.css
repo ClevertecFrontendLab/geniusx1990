@@ -1,0 +1,10 @@
+.card-item span {
+    color: #2f54eb;
+}
+
+.card-item {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #f0f0f0;
+}
