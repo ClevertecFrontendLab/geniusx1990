@@ -4,17 +4,15 @@ import './style.css';
 
 export default function ButtonExit({ collapsed }: { collapsed: boolean }) {
     return (
-        <div>
-            <Button className='exit-button'>
-                {collapsed ? (
+        <Button className='exit-button'>
+            {collapsed ? (
+                <img src={image} alt='log-out' className='sign-out' />
+            ) : (
+                <>
                     <img src={image} alt='log-out' className='sign-out' />
-                ) : (
-                    <>
-                        <img src={image} alt='log-out' className='sign-out' />
-                        Выход
-                    </>
-                )}
-            </Button>
-        </div>
+                    Выход
+                </>
+            )}
+        </Button>
     );
 }

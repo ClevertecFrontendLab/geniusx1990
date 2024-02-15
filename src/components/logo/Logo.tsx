@@ -1,12 +1,11 @@
 import './style.css';
-import React from 'react';
 import logoImage from '/fit.svg';
 import logoName from '/Clever.svg';
 interface LogoProps {
     collapsed: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ collapsed }) => {
+export default function Logo({ collapsed }: LogoProps) {
     return (
         <div
             className='logo'
@@ -19,6 +18,4 @@ const Logo: React.FC<LogoProps> = ({ collapsed }) => {
             <img className='second-img' src={logoImage} alt='Clever Logo' />
         </div>
     );
-};
-
-export default Logo;
+}
