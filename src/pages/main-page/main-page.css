@@ -4,12 +4,6 @@
     background-image: url(../../../main_page_light.png);
     background-size: cover;
     background-position: center;
-    /*  display: flex;
-    flex-direction: column; */
-    /*     
- margin: 0 auto;
- padding: 2rem;
- */
     text-align: center;
 }
 
@@ -83,16 +77,12 @@ ul {
     .trigger.collapsed {
         left: -23px;
     }
-    
+
     .site-layout {
-        margin-left: 0px !important;
+        margin-left: 0 !important;
     }
     .trigger {
         width: 48px;
         height: 32px;
     }
-
-  
-   
-    
 }

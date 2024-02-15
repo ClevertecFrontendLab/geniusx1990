@@ -3,11 +3,6 @@ footer {
     align-items: end;
     justify-content: space-between;
     padding: 0 24px 42px;
-    /*     padding: 0 0px 42px 24px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    right: 24px; */
 }
 
 .reviews-button {
@@ -28,9 +23,8 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
     .reviews-button {
         margin-top: 24px;
     }
-
 }
