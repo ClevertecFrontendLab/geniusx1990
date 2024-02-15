@@ -11,3 +11,12 @@
         max-width: 752px;
     }
 }
+
+
+@media screen and (max-width: 361px) {
+.main-section {
+    padding: 24px 16px;
+}
+  
+   
+}

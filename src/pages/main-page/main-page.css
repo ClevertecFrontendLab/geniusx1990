@@ -64,12 +64,13 @@ ul {
 @media screen and (max-width: 361px) {
     .trigger {
         left: 83px;
-        top: 64px;
+        top: 41px;
     }
 
     .ant-layout-sider {
         max-width: 106px !important;
         min-width: 0 !important;
+        height: 640px !important;
     }
 
     .ant-layout-sider.ant-layout-sider-light {
@@ -84,6 +85,14 @@ ul {
     }
     
     .site-layout {
-        margin-left: 106px !important;
+        margin-left: 0px !important;
     }
+    .trigger {
+        width: 48px;
+        height: 32px;
+    }
+
+  
+   
+    
 }
