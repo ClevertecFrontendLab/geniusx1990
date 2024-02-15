@@ -7,9 +7,9 @@ import { Layout } from 'antd';
 import Sider from 'antd/lib/layout/Sider';
 import { Content } from 'antd/lib/layout/layout';
 import CustomMenu from '@components/CustomMenu/CustomMenu';
-import Logo from '../../components/Logo/Logo';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import ButtonExit from '@components/ButtonExit/ButtonExit';
+import Logo from '@components/Logo/Logo';
 
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);

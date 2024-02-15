@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logoImage from '/fit.svg';
 import logoName from '/Clever.svg';
 import './style.css';
 import mobileLogo from '/logo_mobile.svg';
+
 interface LogoProps {
     collapsed: boolean;
 }
 
 const Logo: React.FC<LogoProps> = ({ collapsed }) => {
-    if (window.innerWidth <= 361) {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 361);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    if (isMobile) {
         return (
             <div className='logo'>
                 <img src={mobileLogo} alt='Mobile Logo' />
