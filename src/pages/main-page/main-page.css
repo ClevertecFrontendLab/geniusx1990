@@ -56,9 +56,9 @@ ul {
 }
 
 @media screen and (max-width: 361px) {
-    .trigger {
-        left: 83px;
-        top: 41px;
+    .trigger-mobile {
+        left: 95px;
+        top: 50px;
     }
 
     .ant-layout-sider {
@@ -74,15 +74,31 @@ ul {
         width: 0 !important;
     }
 
-    .trigger.collapsed {
-        left: -23px;
+    .trigger-mobile.collapsed {
+        left: -10px;
     }
 
     .site-layout {
         margin-left: 0 !important;
     }
-    .trigger {
+    .trigger-mobile {
+        background-color: #fff;
+        position: fixed;
+        cursor: pointer;
+        z-index: 1000;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 120%, 0% 100%);
+        transform: translate(0, -50%) rotate(90deg);
         width: 48px;
         height: 32px;
+    }
+
+    .trigger-mobile span {
+        padding: 6px;
+        transform: rotate(90deg);
+        margin-right: 0;
+    
+    }
+    .trigger {
+        display: none;
     }
 }

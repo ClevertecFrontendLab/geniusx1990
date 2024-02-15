@@ -17,4 +17,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    .first-img {
+        width: 52.92px;
+        height: 13.02px;
+    }
+
+    .second-img {
+        width: 18.32px;
+        height: 16.11px;
+    }
 }
