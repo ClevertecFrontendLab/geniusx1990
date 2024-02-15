@@ -1,15 +1,15 @@
 import './main-page.css';
 import React, { useState } from 'react';
+import { Content } from 'antd/lib/layout/layout';
+import { Layout } from 'antd';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import Header from '@components/Header/Header';
 import Footer from '@components/Footer/Footer';
 import MainSection from '@components/MainSection/MainSection';
-import { Layout } from 'antd';
 import Sider from 'antd/lib/layout/Sider';
-import Logo from '@components/Logo/Logo';
-import { Content } from 'antd/lib/layout/layout';
 import CustomMenu from '@components/CustomMenu/CustomMenu';
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import ButtonExit from '@components/ButtonExit/ButtonExit';
+import Logo from '@components/Logo/Logo';
 
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
