@@ -63,7 +63,7 @@ export const MainPage: React.FC = () => {
             <Layout
                 className='site-layout'
                 style={{
-                    marginLeft: collapsed ? 0 : window.innerWidth <= 361 ? 0 : collapsed ? 64 : 208,
+                    marginLeft: collapsed ? 64 : 208,
                 }}
             >
                 <Header />
