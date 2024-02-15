@@ -9,7 +9,7 @@ import MainSection from '@components/MainSection/MainSection';
 import Sider from 'antd/lib/layout/Sider';
 import CustomMenu from '@components/CustomMenu/CustomMenu';
 import ButtonExit from '@components/ButtonExit/ButtonExit';
-import Logo from '@components/Logo/Logo';
+import LogoComponent from '@components/LogoComponent/LogoComponent';
 
 export const MainPage: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -56,7 +56,7 @@ export const MainPage: React.FC = () => {
                     backgroundColor: '#FFFFFF',
                 }}
             >
-                <Logo collapsed={collapsed} />
+                <LogoComponent collapsed={collapsed} />
                 <CustomMenu collapsed={collapsed} />
                 <ButtonExit collapsed={collapsed} />
             </Sider>

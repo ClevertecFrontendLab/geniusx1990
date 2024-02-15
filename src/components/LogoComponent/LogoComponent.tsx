@@ -5,7 +5,7 @@ interface LogoProps {
     collapsed: boolean;
 }
 
-export default function Logo({ collapsed }: LogoProps) {
+export default function LogoComponent({ collapsed }: LogoProps) {
     return (
         <div
             className='logo'
