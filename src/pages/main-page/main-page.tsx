@@ -19,7 +19,7 @@ export const MainPage: React.FC = () => {
     };
 
     return (
-        <Layout style={{ minHeight: '100vh' }}>
+        <Layout className='main-page' style={{ minHeight: '100vh' }}>
             <div
                 data-test-id='sider-switch'
                 className={`trigger ${collapsed ? 'collapsed' : ''}`}

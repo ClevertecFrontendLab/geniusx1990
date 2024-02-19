@@ -1,0 +1,51 @@
+.registration-page {
+    min-height: 100vh;
+    max-width: 1440px;
+    background-image: url(../../../enter_page_light.png);
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-page::before {
+    content: ''; /* создаем псевдоэлемент для наложения блюра */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../property_1=light.png); /* используем изображение, которое хотим заблюрить */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* применяем блюр */
+    z-index: 1; /* устанавливаем выше основного фона */
+}
+
+.form-container {
+    width: 539px;
+    height: 742px;
+    background-color: #FFF;
+    z-index: 100;
+}
+
+.logo {
+    padding: 64px 115px 48px 64px;
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.form-container .first-img {
+    width: 227.12px;
+    height: 54.98px;
+}
+
+.form-container .second-img {
+    width: 78.6px;
+    height: 68.01px;
+}

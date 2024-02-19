@@ -1,0 +1,44 @@
+.auth-form {
+    padding: 0px 85.5px 174px 85.5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.ant-tabs.ant-tabs-top.auth-tabs {
+    width: 100%;
+}
+
+.ant-tabs-nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ant-tabs-nav-list .ant-tabs-tab {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    width: 50%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #262626;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+    border-bottom: 2px solid #2f54eb;
+    color: #2f54eb;
+}
+
+.ant-tabs-ink-bar {
+    display: none;
+}
+
+
+.ant-tabs-tabpane-hidden {
+  display: none;
+}
+
+.ant-tabs-tabpane-active {
+  display: block;
+}
