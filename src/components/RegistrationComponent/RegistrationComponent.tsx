@@ -1,4 +1,4 @@
-import { Form, Checkbox, Button } from 'antd';
+import { Form, Button } from 'antd';
 import './style.css';
 import EmailInput from '@components/EmailInput/EmailInput';
 import PasswordInput from '@components/PasswordInput/PasswordInput';
@@ -28,15 +28,6 @@ const RegistrationComponent: React.FC<RegistrationComponentProps> = ({ onFinish 
                 rules={[{ required: true, message: 'Пожалуйста, введите ваш пароль!' }]}
             />
 
-            <div className='remember-me'>
-                <Form.Item name='remember' valuePropName='checked'>
-                    <Checkbox>Запомнить меня</Checkbox>
-                </Form.Item>
-
-                <Form.Item>
-                    <a href='#'>Забыли пароль?</a>
-                </Form.Item>
-            </div>
 
             <Form.Item>
                 <Button type='primary' htmlType='submit'>

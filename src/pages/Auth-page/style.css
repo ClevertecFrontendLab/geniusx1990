@@ -12,17 +12,17 @@
 }
 
 .registration-page::before {
-    content: ''; /* создаем псевдоэлемент для наложения блюра */
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../../property_1=light.png); /* используем изображение, которое хотим заблюрить */
+    background-image: url(../../../property_1=light.png);
     background-size: cover;
     background-position: center;
-    filter: blur(10px); /* применяем блюр */
-    z-index: 1; /* устанавливаем выше основного фона */
+    filter: blur(10px);
+    z-index: 1;
 }
 
 .form-container {

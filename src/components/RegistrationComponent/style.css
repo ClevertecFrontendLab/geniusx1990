@@ -1,9 +1,3 @@
-.remember-me {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 54px;
-}
-
 #login_remember {
     margin-right: 8px;
 }
@@ -45,4 +39,10 @@
 
 .ant-btn-default .anticon {
     margin-right: 10px;
+}
+
+
+#login_password_repeat {
+    margin-top: 36px;
+    margin-bottom: 30px;
 }
